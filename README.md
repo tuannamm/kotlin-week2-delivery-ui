@@ -3,3 +3,5 @@ Thành viên nhóm:
 2. Võ Minh Thái         - 19207100
 3. Đặng Thành Sơn       - 19207097
 4. Lê Đức Trí Viễn      - 19207118
+
+For video demo please: app/src/main/res/drawable/videoDemo
