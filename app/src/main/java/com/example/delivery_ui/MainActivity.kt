@@ -1,28 +1,21 @@
-package com.example.delivery_ui
+package com.example.baitaptet
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.Toast
+import android.os.Handler
+import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
+import com.example.delivery_ui.R
+import com.example.delivery_ui.screen.Welcome.MainActivity1
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val nextButton: Button = findViewById(R.id.next_button)
-        nextButton.setOnClickListener{
-            nextPage()
-            val intent: Intent = Intent (this, MainActivity2:: class.java)
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this, MainActivity1::class.java)
             startActivity(intent)
-        }
+        }, 5000)
     }
-
-    private fun nextPage() {
-        Toast.makeText(this, "Loading data...",
-            Toast.LENGTH_SHORT).show()
-    }
-
-
 }
