@@ -6,14 +6,14 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.delivery_ui.ProfileViewModel" />
+            type="com.example.delivery_ui.viewModal.ProfileViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/profile_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".screen.profile.ProfileActivity">
-<!--        android:background="@drawable/profile_background"-->
 
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -24,13 +24,14 @@
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.19999999"
+            app:layout_constraintVertical_bias="0.057"
             app:shapeAppearanceOverlay="@style/CardView"
+            app:srcCompat="@drawable/img"
             app:strokeColor="@color/black"
             app:strokeWidth="10dp" />
-        <!--            app:srcCompat="@drawable/img"-->
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView2"
@@ -44,10 +45,10 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/imageViewPhone"
             app:shapeAppearanceOverlay="@style/CardView"
+            app:srcCompat="@drawable/ic_camera"
             app:strokeColor="@color/white"
             app:strokeWidth="6dp"
             tools:ignore="ImageContrastCheck" />
-<!--        app:srcCompat="@drawable/ic_camera"-->
 
         <TextView
             android:id="@+id/textViewName"
@@ -65,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="Full name"
+            android:text="@string/full_name_label"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewName" />
@@ -76,20 +77,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@drawable/sign_in_background"
             android:backgroundTint="#ECE5E5"
             android:padding="20dp"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewFullNameLabel" />
-        <!--            android:background="@drawable/sign_in_background"-->
 
         <TextView
             android:id="@+id/textViewEmailLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Email"
+            android:text="@string/e_mail_label"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewFullName" />
@@ -100,20 +101,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@drawable/sign_in_background"
             android:backgroundTint="#ECE5E5"
             android:padding="20dp"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewEmailLabel" />
-        <!--            android:background="@drawable/sign_in_background"-->
 
         <TextView
             android:id="@+id/textViewPhoneLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Phone number"
+            android:text="@string/phone_number_label"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
@@ -123,13 +124,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@drawable/sign_in_background"
             android:backgroundTint="#ECE5E5"
             android:padding="20dp"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewPhoneLabel" />
-        <!--            android:background="@drawable/sign_in_background"-->
 
+        <Button
+            android:id="@+id/contunue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="#FE724C"
+            android:paddingHorizontal="70dp"
+            android:text="@string/continue_profile"
+            android:textColor="#311B92"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPhone"
+            app:shapeAppearanceOverlay="@style/Button5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

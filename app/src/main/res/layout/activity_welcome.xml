@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
     tools:context=".screen.Welcome.Welcome">
-    <!--    android:background="@drawable/welcome_background"-->
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:paddingHorizontal="20dp"
-        android:text="Wellcome"
+        android:text="@string/welcome_title"
         android:textColor="@color/black"
         android:textSize="60sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +24,7 @@
         android:layout_height="wrap_content"
         android:paddingStart="20dp"
         android:paddingEnd="40dp"
-        android:text="Welcome everybody"
+        android:text="@string/welcome_body"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +49,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:paddingHorizontal="20dp"
-            android:text="Sign in with"
+            android:text="@string/signin_with"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -71,16 +70,16 @@
     </RelativeLayout>
 
     <Button
-
+        app:shapeAppearanceOverlay="@style/Button5"
         android:id="@+id/button_facebook"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="25dp"
-        android:drawableStart="@drawable/facebook"
+        android:drawableStart="@drawable/icon_facebook"
         android:paddingHorizontal="16dp"
-        android:text="Facebook"
+        android:text="@string/btn_text_facebook"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="14sp"
@@ -90,22 +89,22 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
+        app:shapeAppearanceOverlay="@style/Button5"
         android:id="@+id/button_gmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="30dp"
-        android:drawableStart="@drawable/google"
+        android:background="@drawable/signin_btn_background"
+        android:drawableStart="@drawable/icon_google"
         android:paddingHorizontal="16dp"
-        android:text="Gmail"
+        android:text="@string/btn_text_gmail"
         android:textAllCaps="false"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
-    <!--        android:background="@drawable/signin_btn_background"-->
-
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -121,13 +120,12 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
-        android:text="Start with email or phone"
+        android:background="@drawable/start_btn_background_opacity"
+        android:text="@string/btn_start_w_email_or_phone"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_facebook" />
-<!--    android:background="@drawable/start_btn_background_opacity"-->
-
 
 
     <LinearLayout
@@ -142,14 +140,14 @@
             android:id="@+id/already_have_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already have account" />
+            android:text="@string/already_have_account" />
 
         <TextView
             android:id="@+id/textViewSignin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="Sign in" />
+            android:text="@string/sign_in" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

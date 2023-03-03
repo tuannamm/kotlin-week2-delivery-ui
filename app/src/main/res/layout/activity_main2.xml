@@ -15,13 +15,13 @@
         app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
-<!--    app:srcCompat="@drawable/pic_onboarding_2"-->
+        app:srcCompat="@drawable/pic_onboarding_2" />
 
     <ImageView
         android:id="@+id/imageNext2"
         android:layout_width="67dp"
         android:layout_height="67dp"
+        android:background="@drawable/icon_background"
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,12 +29,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.912"
+        app:srcCompat="@drawable/ic_round_arrow_right_alt"
         app:tint="@color/white"
         tools:ignore="ImageContrastCheck" />
-
-<!--    app:srcCompat="@drawable/ic_round_arrow_right_alt"-->
-    <!--        android:background="@drawable/icon_background"-->
-
 
     <TextView
         android:id="@+id/textView2"

@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import com.example.delivery_ui.MainViewModel
 import com.example.delivery_ui.R
 import com.example.delivery_ui.databinding.ActivityNewBinding
 import com.example.delivery_ui.screen.Profile.ProfileActivity

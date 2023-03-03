@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import com.example.delivery_ui.ProfileViewModel
+import com.example.delivery_ui.viewModal.ProfileViewModel
 import com.example.delivery_ui.R
 import com.example.delivery_ui.databinding.ActivityProfileBinding
 

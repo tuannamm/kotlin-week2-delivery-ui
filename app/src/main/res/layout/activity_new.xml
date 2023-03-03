@@ -6,13 +6,13 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.delivery_ui.MainViewModel" />
+            type="com.example.delivery_ui.viewModal.MainViewModel" />
     </data>
-<!--    android:background="@drawable/signin_background"-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:background="@drawable/signin_background"
         tools:context=".screen.login.newActivity">
 
 
@@ -21,21 +21,19 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/signin_background"
             android:contentDescription="@string/app_name"
             android:rotation="180"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-           />
-        <!--            android:background="@drawable/signin_background"-->
-<!--        app:srcCompat="@drawable/ic_baseline"-->
-
+            app:srcCompat="@drawable/ic_baseline" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:text="Log In"
+            android:text="@string/login_title"
             android:textColor="@color/black"
             android:textSize="34sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Email"
+            android:text="@string/e_mail"
             android:textColor="#546E7A"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +64,7 @@
                 android:id="@+id/emailInputText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Login Email"
+                android:hint="@string/login_email"
                 android:inputType="textEmailAddress"
                 android:textColorHint="#78909C"
                 tools:ignore="TouchTargetSizeCheck" />
@@ -77,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Login Password"
+            android:text="@string/login_password"
             android:textColor="#546E7A"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +95,7 @@
                 android:id="@+id/passwordInputText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password hint"
+                android:hint="@string/password_hint"
                 android:inputType="textPassword"
                 android:textColorHint="#78909C"
                 tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
@@ -108,21 +106,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Forgot password"
+            android:text="@string/forgot_password"
             android:textColor="#D32F2F"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/passwordTextLayout" />
 
         <Button
-
+            app:shapeAppearanceOverlay="@style/Button5"
             android:id="@+id/buttonLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:backgroundTint="#FE724C"
             android:paddingHorizontal="70dp"
-            android:text="Log in"
+            android:text="@string/login_text_btn"
             android:textColor="#311B92"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -143,13 +141,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:text="Don't have account" />
+                android:text="@string/don_t_have_an_account" />
 
             <TextView
                 android:id="@+id/Signup"
                 android:layout_width="38dp"
                 android:layout_height="29dp"
-                android:text="Sign up"
+                android:text="@string/sign_up_label"
                 android:textColor="#D32F2F" />
         </LinearLayout>
 
@@ -170,7 +168,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:paddingHorizontal="20dp"
-                android:text="Sign in with"
+                android:text="@string/signin_with"
                 android:textColor="#A1887F"
                 android:textStyle="bold" />
 
@@ -205,10 +203,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="25dp"
-
+            app:shapeAppearanceOverlay="@style/Button5"
             android:drawableStart="@drawable/facebook"
             android:paddingHorizontal="16dp"
-            android:text="Facebook"
+            android:text="@string/btn_text_facebook"
             android:textAllCaps="false"
             android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -217,7 +215,7 @@
             tools:ignore="TextContrastCheck" />
 
         <Button
-
+            app:shapeAppearanceOverlay="@style/Button5"
             android:textColor="#311B92"
             android:backgroundTint="#FE724C"
             android:id="@+id/button_gmail"
@@ -227,7 +225,7 @@
             android:layout_marginTop="5dp"
             android:drawableStart="@drawable/google"
             android:paddingHorizontal="16dp"
-            android:text="Gmail"
+            android:text="@string/btn_text_gmail"
             android:textAllCaps="false"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"

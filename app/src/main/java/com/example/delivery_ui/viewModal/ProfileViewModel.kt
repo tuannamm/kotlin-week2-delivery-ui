@@ -1,4 +1,4 @@
-package com.example.delivery_ui
+package com.example.delivery_ui.viewModal
 
 import android.content.Context
 import android.content.SharedPreferences
